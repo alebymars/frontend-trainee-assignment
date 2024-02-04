@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { getAllGames } from '../../utils/getAllGames';
 import { Game } from '../../types/games';
 import MyCard from '../../components/MyCard';
+import { cards } from './data';
 
 interface Props {
 }
 
 const Home = (props: Props) => {
 
-    const [allGames, setAllGames] = useState<Game[]>();
+    const [allGames, setAllGames] = useState<Game[]>(cards);
 
     useEffect(() => {
         getAllGames()

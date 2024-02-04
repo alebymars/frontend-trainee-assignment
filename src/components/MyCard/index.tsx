@@ -19,7 +19,7 @@ const MyCard = ({ thumbnail, description, title, id }: Props) => {
         <div className='card' onClick={() => {
             console.log(id);
         }}>
-            <img alt={title} src={thumbnail} width={200} style={{ objectFit: "cover" }} />
+            <img className="cardImage" alt={title} src={thumbnail} />
             <div className="cardDescriptionBlock">
                 <p className="cardTitle">{title}</p>
                 <p className="cardPublisher">{description.publisher}</p>

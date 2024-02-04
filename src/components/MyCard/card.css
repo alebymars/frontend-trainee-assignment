@@ -3,16 +3,24 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   background-color: #272b30;
+  width: 30%;
+  min-width: 215px;
+  transition: all 0.5s;
 }
 
 .card:hover {
   transform: scale(1.1);
   transition: all 0.5s;
+}
+
+.cardImage {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
 }
 
 .cardTitle {
@@ -21,7 +29,10 @@
   background-color: #272b30;
 }
 
-.cardDescription, .cardPublisher, .cardGenre, .cardFormattedDate {
+.cardDescription,
+.cardPublisher,
+.cardGenre,
+.cardFormattedDate {
   background-color: #272b30;
 }
 
@@ -33,4 +44,22 @@
   height: 100%;
   font-family: "Product Sans", sans-serif;
   background-color: #272b30;
+}
+
+@media only screen and (min-width: 1200px) {
+  .card {
+    width: 22%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .card {
+    width: 95%;
+  }
 }
