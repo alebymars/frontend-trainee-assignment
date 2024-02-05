@@ -1,0 +1,84 @@
+.filterMain {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 40px 0 20px 0;
+  justify-content: center;
+}
+
+.filterBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0 0 20px;
+}
+
+.filterText {
+  color: #7a8288;
+  font-size: 15px;
+  font-family: "Product Sans", sans-serif;
+  transition: all 0.5s;
+}
+
+.filterDescription {
+  color: #c2c2c2;
+  font-size: 15px;
+  font-family: "Product Sans", sans-serif;
+  transition: all 0.5s;
+}
+
+.my-dropdown,
+.ant-dropdown-menu {
+  background-color: #272b30 !important;
+  max-height: 150px;
+  overflow: auto;
+  scrollbar-color: #1c1e22 #7a8288;
+}
+
+.ant-dropdown-menu-title-content {
+  color: #7a8288;
+}
+
+.ant-dropdown-menu-item-active {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.ant-dropdown-menu-item-disabled {
+  background-color: #ffffff00 !important;
+  color: aliceblue !important;
+}
+
+.ant-space:hover {
+  .filterText,
+  .filterDescription,
+  .anticon,
+  .anticon-down {
+    transition: all 0.5s;
+    color: #bdc6cf !important;
+  }
+}
+
+/* media query */
+
+/* Стилизация скроллбара */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Стилизация трека (полосы) скроллбара */
+::-webkit-scrollbar-track {
+  background: #1c1e22;
+  border-radius: 10px;
+}
+
+/* Стилизация самого скроллбара */
+::-webkit-scrollbar-thumb {
+  background: #7a8288;
+  border-radius: 10px;
+}
+
+/* Изменение цвета скроллбара при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
