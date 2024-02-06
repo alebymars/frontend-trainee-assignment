@@ -1,32 +1,49 @@
-@import url("https://fonts.cdnfonts.com/css/google-sans");
-
 .card {
   display: flex;
+  position: relative;
   flex-direction: column;
-  border-radius: 10px;
+  transition: all 0.5s;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
+  border-radius: 10px;
   background-color: #272b30;
   width: 30%;
   min-width: 215px;
-  transition: all 0.5s;
+  overflow: hidden;
 }
 
 .card:hover {
   transform: scale(1.1);
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .cardImage {
-  object-fit: cover;
   width: 100%;
   height: 150px;
+  object-fit: cover;
 }
 
 .cardTitle {
+  background-color: #272b30;
   font-size: 18px;
   font-family: "Product Sans Medium", sans-serif;
-  background-color: #272b30;
+}
+
+.cardPlatformBg {
+  position: absolute;
+  top: -1px;
+  right: -0;
+  backdrop-filter: blur(15px);
+  border-radius: 0 0 0 10px;
+  background-color: #0000006c;
+}
+
+.cardPlatform {
+  padding: 5px 10px;
+  color: #c2c2c2;
+  font-weight: 500;
+  font-size: 13px;
+  font-family: "Product Sans Medium", sans-serif;
 }
 
 .cardDescription,
@@ -39,11 +56,11 @@
 .cardDescriptionBlock {
   display: flex;
   flex-direction: column;
-  padding: 5px 10px;
-  color: #aaaaaa;
-  height: 100%;
-  font-family: "Product Sans", sans-serif;
   background-color: #272b30;
+  padding: 10px;
+  height: 100%;
+  color: #aaaaaa;
+  font-family: "Product Sans", sans-serif;
 }
 
 @media only screen and (min-width: 1200px) {

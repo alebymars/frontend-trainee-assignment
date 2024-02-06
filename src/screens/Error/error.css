@@ -1,0 +1,19 @@
+.btnBactToMainPage {
+  color: #69b1ff !important;
+}
+
+.btnBactToMainPage:hover {
+  color: #a9d0fa !important;
+}
+
+.errorPageBlock {
+  display: flex;
+  min-height: 100dvh;
+  align-items: center;
+  background-color: rgba(28, 30, 34, 1);
+}
+
+.ant-result {
+  width: 100%;
+  height: 100%;
+}

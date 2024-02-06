@@ -1,11 +1,15 @@
-import { InfoCircleOutlined, WindowsOutlined, ChromeOutlined, TagOutlined } from "@ant-design/icons";
+import { InfoCircleOutlined, WindowsOutlined, ChromeOutlined, TagOutlined, FireOutlined } from "@ant-design/icons";
 
 export const GenreTags = [
+  // {
+  //   label: "Genre:",
+  //   key: "genre",
+  //   icon: <InfoCircleOutlined style={{ color: "#7a8288" }} />,
+  //   disabled: true,
+  // },
   {
-    label: "Genre:",
-    key: "genre",
-    icon: <InfoCircleOutlined style={{ color: "#7a8288" }} />,
-    disabled: true,
+    label: "All",
+    key: "all",
   },
   {
     label: "MMO",
@@ -47,141 +51,147 @@ export const GenreTags = [
     label: "Fighting",
     key: "fighting",
   },
-  {
-    label: "Tags",
-    key: "tags",
-    icon: <TagOutlined style={{ color: "#7a8288" }} />,
-    disabled: true,
-  },
-  {
-    label: "MMOFPS",
-    key: "mmofps",
-  },
-  {
-    label: "Action RPG",
-    key: "action-rpg",
-  },
-  {
-    label: "Sandbox",
-    key: "sandbox",
-  },
-  {
-    label: "Open World",
-    key: "open-world",
-  },
-  {
-    label: "Survival",
-    key: "survival",
-  },
-  {
-    label: "Battle Royale",
-    key: "battle-royale",
-  },
-  {
-    label: "MMOTPS",
-    key: "mmotps",
-  },
-  {
-    label: "Anime",
-    key: "anime",
-  },
-  {
-    label: "PvP",
-    key: "pvp",
-  },
-  {
-    label: "PvE",
-    key: "pve",
-  },
-  {
-    label: "Pixel",
-    key: "pixel",
-  },
-  {
-    label: "MMORTS",
-    key: "mmorts",
-  },
-  {
-    label: "Fantasy",
-    key: "fantasy",
-  },
-  {
-    label: "Sci-Fi",
-    key: "sci-fi",
-  },
-  {
-    label: "Action",
-    key: "action",
-  },
-  {
-    label: "Voxel",
-    key: "voxel",
-  },
-  {
-    label: "Zombie",
-    key: "zombie",
-  },
-  {
-    label: "Turn-Based",
-    key: "turn-based",
-  },
-  {
-    label: "First Person View",
-    key: "first-person",
-  },
-  {
-    label: "Third Person View",
-    key: "third-person",
-  },
-  {
-    label: "Top-Down View",
-    key: "top-down",
-  },
-  {
-    label: "3D Graphics",
-    key: "3d",
-  },
-  {
-    label: "2D Graphics",
-    key: "2d",
-  },
-  {
-    label: "Tank",
-    key: "tank",
-  },
-  {
-    label: "Space",
-    key: "space",
-  },
-  {
-    label: "Sailing",
-    key: "sailing",
-  },
-  {
-    label: "Side Scroller",
-    key: "side-scroller",
-  },
-  {
-    label: "Superhero",
-    key: "superhero",
-  },
-  {
-    label: "Permadeath",
-    key: "permadeath",
-  },
+  // {
+  //   label: "Tags:",
+  //   key: "tags",
+  //   icon: <TagOutlined style={{ color: "#7a8288" }} />,
+  //   disabled: true,
+  // },
+  // {
+  //   label: "MMOFPS",
+  //   key: "mmofps",
+  // },
+  // {
+  //   label: "Action RPG",
+  //   key: "action-rpg",
+  // },
+  // {
+  //   label: "Sandbox",
+  //   key: "sandbox",
+  // },
+  // {
+  //   label: "Open World",
+  //   key: "open-world",
+  // },
+  // {
+  //   label: "Survival",
+  //   key: "survival",
+  // },
+  // {
+  //   label: "Battle Royale",
+  //   key: "battle-royale",
+  // },
+  // {
+  //   label: "MMOTPS",
+  //   key: "mmotps",
+  // },
+  // {
+  //   label: "Anime",
+  //   key: "anime",
+  // },
+  // {
+  //   label: "PvP",
+  //   key: "pvp",
+  // },
+  // {
+  //   label: "PvE",
+  //   key: "pve",
+  // },
+  // {
+  //   label: "Pixel",
+  //   key: "pixel",
+  // },
+  // {
+  //   label: "MMORTS",
+  //   key: "mmorts",
+  // },
+  // {
+  //   label: "Fantasy",
+  //   key: "fantasy",
+  // },
+  // {
+  //   label: "Sci-Fi",
+  //   key: "sci-fi",
+  // },
+  // {
+  //   label: "Action",
+  //   key: "action",
+  // },
+  // {
+  //   label: "Voxel",
+  //   key: "voxel",
+  // },
+  // {
+  //   label: "Zombie",
+  //   key: "zombie",
+  // },
+  // {
+  //   label: "Turn-Based",
+  //   key: "turn-based",
+  // },
+  // {
+  //   label: "First Person View",
+  //   key: "first-person",
+  // },
+  // {
+  //   label: "Third Person View",
+  //   key: "third-person",
+  // },
+  // {
+  //   label: "Top-Down View",
+  //   key: "top-down",
+  // },
+  // {
+  //   label: "3D Graphics",
+  //   key: "3d",
+  // },
+  // {
+  //   label: "2D Graphics",
+  //   key: "2d",
+  // },
+  // {
+  //   label: "Tank",
+  //   key: "tank",
+  // },
+  // {
+  //   label: "Space",
+  //   key: "space",
+  // },
+  // {
+  //   label: "Sailing",
+  //   key: "sailing",
+  // },
+  // {
+  //   label: "Side Scroller",
+  //   key: "side-scroller",
+  // },
+  // {
+  //   label: "Superhero",
+  //   key: "superhero",
+  // },
+  // {
+  //   label: "Permadeath",
+  //   key: "permadeath",
+  // },
 ];
 
 
 export const Platform = [
   {
+    label: "All",
+    key: "all",
+    icon: <FireOutlined style={{ color: "#7a8288" }} />,
+    disabled: false,
+  },
+  {
     label: "Windows (PC)",
-    key: "pc",
+    key: "PC (Windows)",
     icon: <WindowsOutlined style={{ color: "#7a8288" }} />,
     disabled: false,
   },
   {
     label: "Browser (Web)",
-    key: "browser",
+    key: "Web Browser",
     icon: <ChromeOutlined style={{ color: "#7a8288" }} />,
     disabled: false,
   },

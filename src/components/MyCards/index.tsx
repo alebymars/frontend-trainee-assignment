@@ -7,7 +7,7 @@ interface Props {
 
 
 export const MyCards = ({ allGames }: Props) => {
-    return allGames.map(({ title, release_date, publisher, genre, thumbnail, id }) => {
+    return allGames.map(({ title, release_date, publisher, genre, thumbnail, id, platform }) => {
         const date = new Date(release_date);
         const formattedDate = date.toLocaleDateString('ru-RU');
         return (
@@ -17,6 +17,7 @@ export const MyCards = ({ allGames }: Props) => {
                 title={title}
                 thumbnail={thumbnail}
                 description={{ formattedDate, publisher, genre }}
+                platform={platform}
             />
         )
     })
