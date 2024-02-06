@@ -1,0 +1,15 @@
+.ant-result {
+  background-color: rgba(28, 30, 34, 1);
+}
+
+.ant-result-title {
+  color: #c2c2c2 !important;
+  font-size: 28px !important;
+  font-family: "Product Sans Medium", sans-serif;
+}
+
+.ant-result-subtitle {
+  color: #c2c2c2 !important;
+  font-family: "Product Sans", sans-serif;
+  font-size: 18px !important;
+}

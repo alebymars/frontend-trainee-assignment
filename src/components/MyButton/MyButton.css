@@ -1,0 +1,11 @@
+.btnReverse {
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  color: #69b1ff !important;
+}
+
+.btnReverse:hover {
+  transition: all 0.5s;
+  color: #a9d0fa !important;
+}

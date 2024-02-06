@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+
+
+/* Стилизация скроллбара */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Стилизация трека (полосы) скроллбара */
+::-webkit-scrollbar-track {
+  background: #1c1e22;
+}
+
+/* Стилизация самого скроллбара */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #7a8288;
+}
+
+/* Изменение цвета скроллбара при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

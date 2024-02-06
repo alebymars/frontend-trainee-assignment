@@ -1,0 +1,91 @@
+.filterMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 40px 0 20px 0;
+}
+
+.filterBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0 0 20px;
+}
+
+.filterText {
+  transition: all 0.5s;
+  color: #7a8288;
+  font-size: 15px;
+  font-family: "Product Sans", sans-serif;
+}
+
+.filterDescription {
+  transition: all 0.5s;
+  color: #c2c2c2;
+  font-size: 15px;
+  font-family: "Product Sans", sans-serif;
+}
+
+.emptyCardsText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7a8288;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Product Sans", sans-serif;
+}
+
+.buttonResetFilters {
+  color: #69b1ff !important;
+}
+
+.buttonResetFilters:hover {
+  color: #a9d0fa !important;
+}
+
+.allGamesText {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  color: #7a8288;
+}
+
+.countGamesText {
+  color: #7a8288;
+}
+
+/* library */
+
+.my-dropdown,
+.ant-dropdown-menu {
+  background-color: #272b30 !important;
+  max-height: 150px;
+  overflow: auto;
+}
+
+.ant-dropdown-menu-title-content {
+  color: #7a8288;
+}
+
+.ant-dropdown-menu-item-active {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.ant-dropdown-menu-item-disabled {
+  background-color: #ffffff00 !important;
+  color: aliceblue !important;
+}
+
+.ant-space:hover {
+  .filterText,
+  .filterDescription,
+  .anticon,
+  .anticon-down {
+    transition: all 0.5s;
+    color: #bdc6cf !important;
+  }
+}
