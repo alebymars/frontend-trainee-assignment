@@ -1,24 +1,30 @@
-import { Game } from "../../types/games";
+import { Link, useNavigate } from "react-router-dom";
+import { Game } from "../../types/game";
 import "./card.css"
 
 interface Props {
     key?: string;
-    id?: number;
+    id: number;
     thumbnail: string;
     description: Description
     title: string;
     platform: string;
+    gameUrl: string;
 }
 
 interface Description extends Pick<Game, "publisher" | "genre"> {
     formattedDate: string;
 }
 
-const MyCard = ({ thumbnail, description, title, id, platform }: Props) => {
+const MyCard = ({ thumbnail, description, title, id, platform, gameUrl }: Props) => {
+    const navigate = useNavigate();
+
+    const shortGameName = gameUrl.split("/").slice(-1);
+
+    const handleClick = () => navigate(`/games/${shortGameName}`, { replace: false, state: { id } })
+
     return (
-        <div className='card' onClick={() => {
-            console.log(id);
-        }}>
+        <div className='card' onClick={handleClick}>
             <img className="cardImage" alt={title} src={thumbnail} />
             <div className="cardDescriptionBlock">
                 <p className="cardTitle">{title}</p>

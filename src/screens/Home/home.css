@@ -41,10 +41,13 @@
 
 .buttonResetFilters {
   color: #69b1ff !important;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
 .buttonResetFilters:hover {
   color: #a9d0fa !important;
+  transition: all 0.5s;
 }
 
 .allGamesText {

@@ -9,9 +9,9 @@ export const Error = () => {
     return (
         <div className="errorPageBlock">
             <MyResult
-                status={status}
-                title={status}
-                subTitle={statusText}
+                status={status || 404}
+                title={status || "Ошибка"}
+                subTitle={statusText || "Возникла непреднамеренная ошибка, обновите страницу"}
                 extra={
                     <Link className="btnBactToMainPage" to={"/"}>Вернуться на главную</Link>
                 }
