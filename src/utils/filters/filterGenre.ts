@@ -1,4 +1,4 @@
-import { Game } from "../../types/games";
+import { Game } from "../../types/game";
 
 export const filterGenre = async (
   allGames: Game[],

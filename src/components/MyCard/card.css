@@ -56,9 +56,11 @@
 .cardDescriptionBlock {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: #272b30;
   padding: 10px;
   height: 100%;
+  gap: 5px;
   color: #aaaaaa;
   font-family: "Product Sans", sans-serif;
 }

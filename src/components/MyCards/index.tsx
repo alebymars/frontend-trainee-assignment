@@ -1,4 +1,4 @@
-import { Game } from "../../types/games";
+import { Game } from "../../types/game";
 import MyCard from "../MyCard";
 
 interface Props {
@@ -7,7 +7,7 @@ interface Props {
 
 
 export const MyCards = ({ allGames }: Props) => {
-    return allGames.map(({ title, release_date, publisher, genre, thumbnail, id, platform }) => {
+    return allGames.map(({ title, release_date, publisher, genre, thumbnail, id, platform, game_url }) => {
         const date = new Date(release_date);
         const formattedDate = date.toLocaleDateString('ru-RU');
         return (
@@ -18,6 +18,7 @@ export const MyCards = ({ allGames }: Props) => {
                 thumbnail={thumbnail}
                 description={{ formattedDate, publisher, genre }}
                 platform={platform}
+                gameUrl={game_url}
             />
         )
     })

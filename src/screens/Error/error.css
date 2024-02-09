@@ -1,9 +1,12 @@
 .btnBactToMainPage {
   color: #69b1ff !important;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 .btnBactToMainPage:hover {
   color: #a9d0fa !important;
+  transition: all 0.5s;
 }
 
 .errorPageBlock {

@@ -8,7 +8,7 @@ import MySpin from '../../components/MySpin';
 import { filterGenre } from '../../utils/filters/filterGenre';
 import { GenreTags, Platform, SortBy } from './filters';
 import { cards } from './data';
-import { Game } from '../../types/games';
+import { Game } from '../../types/game';
 import "./home.css"
 import { filterPlatform } from '../../utils/filters/filterPlatform';
 import { filterSortBy } from '../../utils/filters/filterSortBy';
